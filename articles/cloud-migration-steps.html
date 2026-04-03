@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 5 Steps to a Successful Cloud Migration — Modeste AGONNOUDE</title>
+    <meta name="description" content="From initial audit to final deployment: a proven methodology for a secure, optimised, and seamless cloud transition. By former ENGIE CDIO Modeste Agonnoudé.">
+    <meta name="keywords" content="Cloud Migration, AWS, Azure, GCP, FinOps, Cloud Strategy, Digital Transformation, Energy">
+    <meta name="author" content="Modeste Agonnoudé">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ceo.grouperms.com/articles/cloud-migration-steps.html">
+    <meta property="og:title" content="The 5 Steps to a Successful Cloud Migration">
+    <meta property="og:description" content="A proven methodology for a secure, optimised, and seamless cloud transition — from initial audit to final deployment.">
+    <meta property="og:url" content="https://ceo.grouperms.com/articles/cloud-migration-steps.html">
+    <meta property="og:type" content="article">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="/favicon.ico">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-483SEQM9JJ"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-483SEQM9JJ');</script>
+    <style>
+        .article-container { max-width: 780px; margin: 0 auto; padding: 60px 24px 80px; }
+        .article-eyebrow { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+        .article-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 800; color: var(--ink); line-height: 1.15; margin-bottom: 20px; }
+        .article-meta { display: flex; align-items: center; gap: 20px; font-size: 0.82rem; color: var(--gray); margin-bottom: 40px; padding-bottom: 28px; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+        .article-meta strong { color: var(--ink); }
+        .article-body { font-size: 1.05rem; line-height: 1.85; color: var(--mid); }
+        .article-body h2 { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--ink); margin: 48px 0 16px; }
+        .article-body h3 { font-size: 1.1rem; color: var(--ink); margin: 32px 0 12px; }
+        .article-body p { margin-bottom: 20px; }
+        .article-body ul, .article-body ol { margin: 0 0 20px 24px; }
+        .article-body li { margin-bottom: 10px; }
+        .article-body strong { color: var(--ink); font-weight: 600; }
+        .article-callout { background: rgba(201,144,58,0.06); border-left: 4px solid var(--gold); padding: 20px 24px; border-radius: 0 8px 8px 0; margin: 32px 0; font-style: italic; color: var(--ink); }
+        .step-block { counter-reset: steps; }
+        .step { display: flex; gap: 20px; margin-bottom: 36px; }
+        .step-num { font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 700; color: var(--gold); line-height: 1; flex-shrink: 0; width: 48px; }
+        .step-body h3 { font-size: 1.05rem; color: var(--ink); margin: 0 0 8px; font-weight: 600; }
+        .step-body p { font-size: 0.95rem; color: var(--mid); margin: 0; line-height: 1.7; }
+        .article-cta { margin-top: 60px; padding: 40px; background: var(--ink); border-radius: 16px; text-align: center; }
+        .article-cta h3 { font-family: 'Playfair Display', serif; color: #fff; margin-bottom: 12px; }
+        .article-cta p { color: rgba(255,255,255,0.6); font-size: 0.9rem; margin-bottom: 24px; }
+        .back-link { display: inline-flex; align-items: center; gap: 8px; font-size: 0.85rem; font-weight: 600; color: var(--gold); margin-bottom: 32px; }
+        .back-link:hover { opacity: 0.75; }
+        .six-r-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 20px 0 32px; }
+        .r-item { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+        .r-item strong { display: block; color: var(--ink); font-size: 0.88rem; margin-bottom: 4px; }
+        .r-item span { font-size: 0.78rem; color: var(--mid); }
+        @media (max-width: 600px) { .six-r-grid { grid-template-columns: 1fr 1fr; } .step { flex-direction: column; gap: 8px; } }
+    </style>
+</head>
+<body>
+
+<header></header>
+
+<main style="padding-top: 76px; background: var(--cream);">
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <nav aria-label="Breadcrumb">
+                <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a href="../index.html" itemprop="item"><span itemprop="name">Home</span></a>
+                        <meta itemprop="position" content="1">
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a href="../blog.html" itemprop="item"><span itemprop="name">Insights</span></a>
+                        <meta itemprop="position" content="2">
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <span itemprop="name">Cloud Migration</span>
+                        <meta itemprop="position" content="3">
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <article class="article-container">
+            <a href="../blog.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Insights</a>
+            <p class="article-eyebrow">Cloud Strategy</p>
+            <h1 class="article-title">The 5 Steps to a Successful Cloud Migration</h1>
+            <div class="article-meta">
+                <span><strong>Modeste Agonnoudé</strong></span>
+                <span><i class="fas fa-calendar-alt"></i> January 2025</span>
+                <span><i class="fas fa-clock"></i> 7 min read</span>
+            </div>
+
+            <div class="article-body">
+                <p>Cloud migration done right reduces infrastructure costs by 20–35%, improves agility, and enables capabilities — AI, analytics, global scale — that on-premises infrastructure cannot match. Done wrong, it creates security vulnerabilities, spiralling costs, and technical debt that can take years to unwind.</p>
+                <p>Having led cloud migrations at Bull SA and across ENGIE's Africa business unit — covering AWS, Azure, and GCP deployments — I have developed a methodology that consistently delivers successful outcomes. Here are the five steps.</p>
+
+                <div class="article-callout">
+                    "Cloud migration is not an IT project. It is a business transformation that happens to involve technology."
+                </div>
+
+                <div class="step-block">
+                    <div class="step">
+                        <div class="step-num">01</div>
+                        <div class="step-body">
+                            <h3>Assessment &amp; Discovery</h3>
+                            <p>Before moving anything, you need a complete, accurate picture of what you have. This means a full application and infrastructure inventory — including shadow IT — mapped against business criticality, technical dependencies, and compliance requirements. At ENGIE Africa, we discovered 40% more applications than the official CMDB reflected. You cannot migrate what you do not know exists.</p>
+                            <p>Key outputs: application portfolio map, dependency graph, compliance constraints register, and a preliminary business case.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-num">02</div>
+                        <div class="step-body">
+                            <h3>Strategy &amp; Design — The 6 R's</h3>
+                            <p>Not every workload belongs in the cloud, and not every cloud migration looks the same. The industry-standard "6 R's" framework provides a decision matrix for each application:</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="six-r-grid">
+                    <div class="r-item"><strong>Rehost</strong><span>"Lift and shift" — move as-is. Fast, low risk, limited benefit.</span></div>
+                    <div class="r-item"><strong>Replatform</strong><span>Minor optimisations during migration (e.g. managed DB).</span></div>
+                    <div class="r-item"><strong>Refactor</strong><span>Re-architect for cloud-native patterns. High effort, high reward.</span></div>
+                    <div class="r-item"><strong>Repurchase</strong><span>Replace with a SaaS alternative (e.g. move CRM to Salesforce).</span></div>
+                    <div class="r-item"><strong>Retain</strong><span>Keep on-premises — regulatory, latency, or cost reasons.</span></div>
+                    <div class="r-item"><strong>Retire</strong><span>Decommission. Often 20–30% of portfolio in discovery audits.</span></div>
+                </div>
+
+                <div class="step-block">
+                    <div class="step">
+                        <div class="step-num">03</div>
+                        <div class="step-body">
+                            <h3>Migration Execution — Wave Planning</h3>
+                            <p>Never migrate everything at once. Structure your migration in waves, starting with low-criticality, low-complexity workloads to build team confidence and test your tooling. Reserve your most complex, business-critical systems for later waves when your team has operational experience.</p>
+                            <p>Each wave should include a rollback plan. The ability to reverse a migration quickly — within 4 hours — is a non-negotiable requirement in regulated industries.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-num">04</div>
+                        <div class="step-body">
+                            <h3>Optimisation &amp; FinOps</h3>
+                            <p>The most common post-migration surprise is cost. Cloud bills grow quickly when teams are not trained to use cloud resources efficiently. Implement FinOps practices from day one: tagging policies for cost attribution, reserved instance purchasing for stable workloads, rightsizing reviews quarterly, and automated shutdown of non-production environments outside business hours.</p>
+                            <p>In the ENGIE Africa migration, FinOps practices reduced our monthly cloud spend by 28% within six months of go-live.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-num">05</div>
+                        <div class="step-body">
+                            <h3>Continuous Governance &amp; Security Posture</h3>
+                            <p>Cloud environments drift. Configurations change, new services are spun up, and access permissions accumulate over time. Implement a Cloud Security Posture Management (CSPM) tool, define a cloud governance framework, and establish a Cloud Centre of Excellence (CCoE) to set standards, review architecture decisions, and manage costs on an ongoing basis.</p>
+                            <p>Migration is not complete when the last workload moves. It is complete when governance is operational and the team is self-sufficient.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Multi-Cloud vs Single Cloud</h2>
+                <p>Most large enterprises end up with multi-cloud environments — often through acquisition, vendor diversity requirements, or specific service differentiation. AWS leads on breadth of services; Azure on Microsoft ecosystem integration; GCP on data and AI. Understanding your organisation's primary workloads and integration requirements should guide platform selection, not marketing relationships.</p>
+
+                <h2>A Note on Regulated Industries</h2>
+                <p>Energy, utilities, financial services, and healthcare face specific data residency, sovereignty, and audit requirements that affect cloud architecture choices. Sovereign cloud offerings from major providers — AWS GovCloud, Azure for Operators, Google Sovereign Cloud — exist for a reason. Map your regulatory obligations before selecting your cloud architecture, not after.</p>
+            </div>
+
+            <div class="article-cta">
+                <h3>Planning a cloud migration or optimisation?</h3>
+                <p>I help energy and infrastructure organisations navigate cloud strategy, vendor selection, FinOps, and governance — drawing on certified AWS, Azure, and GCP experience across 20+ countries.</p>
+                <a href="../contact.html" class="btn-hero-primary"><i class="fas fa-envelope"></i> Discuss Your Cloud Strategy</a>
+            </div>
+        </article>
+    </div>
+
+</main>
+
+<footer></footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

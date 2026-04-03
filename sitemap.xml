@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+    <!-- Homepage -->
+    <url>
+        <loc>https://ceo.grouperms.com/index.html</loc>
+        <lastmod>2026-04-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://ceo.grouperms.com/index.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ceo.grouperms.com/index.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ceo.grouperms.com/index.html"/>
+    </url>
+
+    <!-- About / Biography -->
+    <url>
+        <loc>https://ceo.grouperms.com/about.html</loc>
+        <lastmod>2026-04-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://ceo.grouperms.com/about.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ceo.grouperms.com/about.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ceo.grouperms.com/about.html"/>
+    </url>
+
+    <!-- Strategic Advisory -->
+    <url>
+        <loc>https://ceo.grouperms.com/advisory.html</loc>
+        <lastmod>2026-04-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://ceo.grouperms.com/advisory.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ceo.grouperms.com/advisory.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ceo.grouperms.com/advisory.html"/>
+    </url>
+
+    <!-- RMS Digital Academy -->
+    <url>
+        <loc>https://ceo.grouperms.com/academy.html</loc>
+        <lastmod>2026-04-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://ceo.grouperms.com/academy.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ceo.grouperms.com/academy.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ceo.grouperms.com/academy.html"/>
+    </url>
+
+    <!-- Insights / Blog -->
+    <url>
+        <loc>https://ceo.grouperms.com/blog.html</loc>
+        <lastmod>2026-04-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://ceo.grouperms.com/blog.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ceo.grouperms.com/blog.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ceo.grouperms.com/blog.html"/>
+    </url>
+
+    <!-- Contact -->
+    <url>
+        <loc>https://ceo.grouperms.com/contact.html</loc>
+        <lastmod>2026-04-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://ceo.grouperms.com/contact.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ceo.grouperms.com/contact.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ceo.grouperms.com/contact.html"/>
+    </url>
+
+    <!-- Blog Articles -->
+    <url>
+        <loc>https://ceo.grouperms.com/articles/ransomware-2025.html</loc>
+        <lastmod>2025-03-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://ceo.grouperms.com/articles/erp-africa-sme.html</loc>
+        <lastmod>2025-02-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://ceo.grouperms.com/articles/cloud-migration-steps.html</loc>
+        <lastmod>2025-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://ceo.grouperms.com/articles/energy-transition-cio.html</loc>
+        <lastmod>2024-12-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://ceo.grouperms.com/articles/devsecops-secure-by-design.html</loc>
+        <lastmod>2024-11-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://ceo.grouperms.com/articles/finops-cloud-costs.html</loc>
+        <lastmod>2024-10-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+</urlset>

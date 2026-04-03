@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+Disallow: /flags/
+Disallow: /pdfs/
+
+Sitemap: https://ceo.grouperms.com/sitemap.xml
+
+# Crawl delay for responsible crawling
+Crawl-delay: 5
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2

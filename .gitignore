@@ -1,0 +1,56 @@
+# ── OS files ──────────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ── Editor files ──────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# ── Node (if ever used) ───────────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+
+# ── Python / Lambda local dev ─────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.env
+.env.local
+venv/
+.venv/
+
+# ── Lambda build artifacts ────────────────────────────────────────────────────
+devops/lambda/*.zip
+devops/lambda/__pycache__/
+
+# ── Secrets — NEVER commit these ─────────────────────────────────────────────
+*.pem
+*.key
+*.p12
+.env*
+secrets.json
+credentials.json
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Temporary files ───────────────────────────────────────────────────────────
+*.tmp
+*.swp
+*.bak
+*.orig

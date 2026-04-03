@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80">
+  <defs>
+    <linearGradient id="ciscoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1BA0D7" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#1BA0D7" stop-opacity="0.05"/>
+    </linearGradient>
+    <filter id="shadow" x="-0.2" y="-0.2" width="1.4" height="1.4">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  <rect width="200" height="80" fill="white" rx="12" stroke="url(#ciscoGrad)" stroke-width="2" filter="url(#shadow)"/>
+  <circle cx="100" cy="40" r="20" fill="#1BA0D7"/>
+  <text x="100" y="48" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">CISCO</text>
+  <text x="100" y="68" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#6B7280">Networking Academy</text>
+</svg>
