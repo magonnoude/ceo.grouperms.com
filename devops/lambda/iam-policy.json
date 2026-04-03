@@ -9,7 +9,7 @@
         "logs:CreateLogStream",
         "logs:PutLogEvents"
       ],
-      "Resource": "arn:aws:logs:us-east-1:*:log-group:/aws/lambda/ceo-contact-handler:*"
+      "Resource": "arn:aws:logs:eu-west-3:*:log-group:/aws/lambda/ceo-contact-handler:*"
     },
     {
       "Sid": "SESsend",
@@ -33,7 +33,7 @@
         "dynamodb:GetItem",
         "dynamodb:UpdateItem"
       ],
-      "Resource": "arn:aws:dynamodb:us-east-1:*:table/ceo-contact-submissions"
+      "Resource": "arn:aws:dynamodb:eu-west-3:*:table/ceo-contact-submissions"
     }
   ]
 }

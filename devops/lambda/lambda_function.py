@@ -32,8 +32,8 @@ logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
 # ── AWS clients ───────────────────────────────────────────────────────────────
-ses = boto3.client('ses', region_name='us-east-1')
-dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
+ses = boto3.client('ses', region_name='eu-west-3')
+dynamodb = boto3.resource('dynamodb', region_name='eu-west-3')
 
 # ── Config from environment ───────────────────────────────────────────────────
 RECAPTCHA_SECRET  = os.environ.get('RECAPTCHA_SECRET_KEY', '')
