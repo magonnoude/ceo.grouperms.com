@@ -31,7 +31,7 @@ This site (`ceo.grouperms.com`) is the personal brand hub. The company site live
 | **Fonts** | Google Fonts — Playfair Display + DM Sans |
 | **Icons** | Font Awesome 6.4 |
 | **Hosting** | AWS S3 + CloudFront CDN |
-| **Analytics** | Google Analytics GA4 (G-483SEQM9JJ) |
+| **Analytics** | Google Analytics GA4 (G-18H5SEGC8K) |
 | **Security** | reCAPTCHA v3 |
 | **LMS** | Moodle (academy.grouperms.com) |
 
@@ -69,15 +69,21 @@ ceo.grouperms.com/
 
 ## Deployment
 
-Hosted on **AWS S3** with **CloudFront** CDN.
+Hosted on **AWS S3** with **CloudFront** CDN. Deployments are **fully automated** — any push to `main` triggers the CI/CD pipeline.
 
 ```bash
-# Deploy to S3
-aws s3 sync . s3://ceo.grouperms.com/ --delete --exclude ".git/*"
-
-# Invalidate CloudFront cache
-aws cloudfront create-invalidation --distribution-id YOUR_DISTRIBUTION_ID --paths "/*"
+# Any change auto-deploys via GitHub Actions:
+git add .
+git commit -m "your message"
+git push
+# → Deploys to S3 + invalidates CloudFront in ~60 seconds
 ```
+
+### API Endpoints (eu-west-3)
+| Endpoint | URL |
+|----------|-----|
+| Contact | `https://3x4sf5quh0.execute-api.eu-west-3.amazonaws.com/prod/contact` |
+| Newsletter | `https://3x4sf5quh0.execute-api.eu-west-3.amazonaws.com/prod/newsletter` |
 
 ## Contact
 
@@ -90,7 +96,7 @@ aws cloudfront create-invalidation --distribution-id YOUR_DISTRIBUTION_ID --path
 
 | Version | Date | Description |
 |---------|------|-------------|
-| 2.1.0 | April 2026 | Personal branding redesign, 6 articles, WhatsApp integration, full consistency audit |
+| 2.1.0 | April 2026 | Personal branding redesign, 6 articles, WhatsApp, CI/CD, Lambda contact handler (eu-west-3), GA4 G-18H5SEGC8K |
 | 2.0.0 | March 2026 | Initial personal site launch |
 
 ---
