@@ -148,7 +148,7 @@ if (contactForm) {
         };
 
         try {
-            const response = await fetch('https://3x4sf5quh0.execute-api.eu-west-3.amazonaws.com/prod/contact', {
+            const response = await fetch('https://3x4sf5quh0.execute-api.eu-west-3.amazonaws.com/prod/contact/', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData)

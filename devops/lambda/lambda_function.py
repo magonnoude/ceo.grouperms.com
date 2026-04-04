@@ -41,7 +41,7 @@ SES_FROM          = os.environ.get('SES_FROM_EMAIL', 'no-reply@grouperms.com')
 SES_TO            = os.environ.get('SES_TO_EMAIL', 'modeste.agonnoude@grouperms.com')
 TABLE_NAME        = os.environ.get('DYNAMODB_TABLE', 'ceo-contact-submissions')
 ALLOWED_ORIGIN    = os.environ.get('ALLOWED_ORIGIN', 'https://ceo.grouperms.com')
-MIN_SCORE         = float(os.environ.get('RECAPTCHA_MIN_SCORE', '0.5'))
+MIN_SCORE         = float(os.environ.get('RECAPTCHA_MIN_SCORE', '0.3'))
 
 # ── CORS headers ──────────────────────────────────────────────────────────────
 CORS_HEADERS = {
@@ -83,9 +83,13 @@ def verify_recaptcha(token: str) -> tuple[bool, float]:
     Returns (is_valid, score).
     Score: 1.0 = very likely human, 0.0 = very likely bot.
     """
-    if not token or not RECAPTCHA_SECRET:
-        logger.warning("reCAPTCHA token or secret missing — skipping verification")
-        return True, 0.9  # Allow through in dev/misconfigured environments
+    if not token:
+        logger.warning("reCAPTCHA token missing — skipping verification")
+        return True, 0.9  # No token = curl/direct API call, allow through
+
+    if not RECAPTCHA_SECRET:
+        logger.warning("reCAPTCHA secret not configured — skipping verification")
+        return True, 0.9  # Misconfigured, allow through
 
     try:
         data = urllib.parse.urlencode({
