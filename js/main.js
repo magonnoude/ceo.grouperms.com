@@ -129,7 +129,7 @@ if (contactForm) {
         // Get reCAPTCHA v3 token
         if (typeof grecaptcha !== 'undefined') {
             try {
-                const token = await grecaptcha.execute('6LePUZ0sAAAAAK2QgwgDvTI7q0ZoATGnsDRwb3xy', { action: 'submit' });
+                const token = await grecaptcha.execute('6Lf_9qUsAAAAAAoaid3-4h5kxgtRj2jqzCo2TLYO', { action: 'submit' });
                 document.getElementById('recaptchaToken').value = token;
             } catch (error) {
                 console.error('reCAPTCHA error:', error);
